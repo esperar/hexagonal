@@ -43,31 +43,3 @@ subprojects {
 		useJUnitPlatform()
 	}
 }
-
-project(':hexagonal-core') {
-
-	bootJar { enabled = false }
-	jar { enabled = true }
-
-	dependencies {
-	}
-}
-
-project(':hexagonal-api') {
-	bootJar { enabled = true }
-	jar { enabled = false }
-
-	dependencies {
-		implementation project(':hexagonal-core')
-		implementation 'org.springframework.boot:spring-boot-starter-web'
-	}
-}
-
-project(':hexagonal-batch') {
-	bootJar { enabled = true }
-	jar { enabled = false }
-
-	dependencies {
-		implementation project(':hexagonal-core')
-	}
-}
