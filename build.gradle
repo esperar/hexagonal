@@ -24,7 +24,7 @@ allprojects {
 }
 
 subprojects {
-	group 'kr.hs.entrydsm'
+	group 'esperer'
 	version '1.0'
 	sourceCompatibility = 11
 

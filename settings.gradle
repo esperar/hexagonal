@@ -1,4 +1,5 @@
 rootProject.name = 'hexagonal'
+
 include 'hexagonal-application'
 include 'hexagonal-infrastructure'
 
