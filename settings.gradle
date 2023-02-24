@@ -1,5 +1,4 @@
 rootProject.name = 'hexagonal'
-include 'hexagonal-adapter'
-include 'hexagonal-configuration'
-include 'hexagonal-domain'
+include 'hexagonal-application'
+include 'hexagonal-infrastructure'
 
