@@ -1,0 +1,8 @@
+rootProject.name = 'hexagonal'
+include 'hexagonal-core'
+include 'hexagonal-core:hexagonal-api'
+findProject(':hexagonal-core:hexagonal-api')?.name = 'hexagonal-api'
+include 'hexagonal-stream'
+include 'hexagonal-api'
+include 'hexagonal-batch'
+
